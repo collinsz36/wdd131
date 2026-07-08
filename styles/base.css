@@ -62,22 +62,48 @@ main h1 {
 .card {
     background: white;
     border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+    border: 1px solid black;
     padding: 20px;
+    padding-top: 0;
     text-align: center;
+    overflow: hidden;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 600px 400px;
+    gap: 20px;
+}
+.country-name {
+    border-bottom: 1px solid black;
+    width: 300px;
+    padding-bottom: 5px;
+}
+
+.zimbabwe {
+display: flex;
 }
 
 .card h2 {
     color: white;
     background: rgb(30, 33, 194);
-    margin-top: 0;
+    margin: 0 -20px 20px -20px;
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    padding-top: 0;
+    width: calc(100% + 40px);
 }
 
 .card img {
-    width: 250px;
+    width: 200px;
     height: auto;
-    border-radius: 10px;
-    margin: 10px 0;
 }
 
 
