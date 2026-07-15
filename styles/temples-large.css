@@ -12,7 +12,7 @@ header{
     position: relative;
 }
 
-.navigation{
+.nav{
     display:flex;
     flex-direction:row;
     margin-left: auto;
@@ -21,7 +21,7 @@ header{
     left: 700px;
 }
 
-.navigation a{
+.nav a{
     display:block;
 }
 

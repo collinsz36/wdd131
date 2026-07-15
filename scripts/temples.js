@@ -7,14 +7,14 @@ document.querySelector("#lastModified").textContent =
 
 const menuButton = document.querySelector("#menu");
 
-const navigation = document.querySelector(".navigation");
+const nav = document.querySelector(".nav");
 
 menuButton.addEventListener("click", () => {
 
-    navigation.classList.toggle("open");
+    nav.classList.toggle("open");
     document.body.classList.toggle("menu-open"); 
 
-    if (navigation.classList.contains("open")) {
+    if (nav.classList.contains("open")) {
         menuButton.textContent = "✖";
     } else {
         menuButton.textContent = "☰";
