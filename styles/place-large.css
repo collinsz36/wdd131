@@ -1,0 +1,70 @@
+@media screen and (min-width: 800px){
+
+body{
+    border-left: solid 10px;
+    border-right: solid 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.hero{
+   position: relative;
+   width: 100%;
+}
+
+.content{
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+}
+.hero picture,
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+    border-bottom: 0;
+}
+
+.card{
+    position: absolute;
+    width: 300px;
+    height:auto;
+}
+.card h2{
+    background-color:#006400;
+    color: #FFFFFF;
+    margin-left: -35px;
+    margin-right: 24px;
+    margin-top: 12px;
+    padding-bottom: 1rem;
+    padding-left: 24px;
+}
+.card p{
+    margin: 12px;
+    padding-left: 18px;
+}
+.data{
+    position: absolute;
+    top: 55px;
+    left: 50px;
+}
+.weather{
+    position: absolute;
+    top: 550px;
+    right: 50px;
+}
+
+.weather img{
+    display:none;
+}
+
+.weather h2::after{
+  content: " \26C5"; 
+  font-size:1.3rem;
+}
+footer{
+    margin-bottom: 32px;
+}
+}

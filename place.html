@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Explore the fauna, flora and cultural heritage of the Zimbabwean people. View photos, history and information about the house of stone that is Zimbabwe">
+    <meta name="author" content="Collins Zivanai">
+    <title>Explore Zimbabwe</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Zimbabwe</h1>
+</header>
+
+<main class="hero">
+
+    <picture>
+        <source srcset="images/zimbabwe-large.webp" media="(min-width: 800px)">
+        <img src="images/zimbabwe-small.webp" alt="Great Zimbabwe Ruins" width="700" height="900">
+    </picture>
+
+    <section class="content">
+
+        <section class="data card">
+     
+            <h2>Data</h2>
+
+            <p><strong>Area:</strong> 390,757 km²</p>
+            <p><strong>Population:</strong> 16.7 Million</p>
+            <p><strong>Capital:</strong> Harare</p>
+            <p><strong>Languages:</strong> English, Shona, Ndebele, and 13 other official languages</p>
+            <p><strong>Currency:</strong> Zimbabwe Gold (ZiG)</p>
+            <p><strong>Time Zone:</strong> CAT (UTC +2)</p>
+            <p><strong>Calling Code:</strong> +263</p>
+            <p><strong>Internet TLD:</strong> .zw</p>
+
+        </section>
+
+        <section class="weather card">
+
+            <h2>Weather</h2>
+
+            <img class="weather-icon" src="images/weather-icon.svg" alt="Partly cloudy weather icon" width="70">
+
+            <p><strong>Temperature:</strong> <span id="temp">22</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">15</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+        </section>
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        Collins Zivanai | Zimbabwe
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
