@@ -1,0 +1,32 @@
+@media screen and (min-width:800px){
+
+#menu{
+    display:none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.nav{
+    display:flex;
+    flex-direction:row;
+    margin-left: auto;
+    gap: 4rem;
+    position:absolute;
+    left: 700px;
+}
+.templeCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav a{
+    display:block;
+}
+
+}
