@@ -122,7 +122,9 @@ function displayTemples(temples) {
         dedicated.innerHTML = `<span>Dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span>Area:</span> ${temple.area} sq ft`;
 
-        image.src = temple.imageUrl;
+        let originalUrl = temple.imageUrl;
+        originalUrl = originalUrl.replace('https://','');
+        image.src = `https://i0.wp.com/${originalUrl}?resize=400,250`;
         image.alt = temple.templeName;
         image.loading = "lazy";
         image.width = 400;
