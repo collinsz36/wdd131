@@ -125,8 +125,8 @@ function displayTemples(temples) {
         image.src = temple.imageUrl;
         image.alt = temple.templeName;
         image.loading = "lazy";
-        image.width = 350;
-        image.height = 220;
+        image.width = 400;
+        image.height = 250;
 
         card.appendChild(name);
         card.appendChild(location);
