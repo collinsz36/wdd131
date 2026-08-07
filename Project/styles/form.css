@@ -13,7 +13,7 @@ header{
 max-width: 800px;
 margin: 0 auto;
 background:#3a013a;
-color:white;
+color:#ffffff;
 padding:30px;
 text-align:center;
 
@@ -80,7 +80,7 @@ padding:15px;
 font-size:1.3rem;
 font-weight:bold;
 background:#3a013a;
-color:white;
+color:#ffffff;
 cursor:pointer;
 border-radius:5px;
 
@@ -96,9 +96,16 @@ footer{
 max-width: 800px;
 margin: 0 auto;
 background:#3a013a;
-color:white;
+color:#ffffff;
 padding:20px;
 margin-top:30px;
 text-align:center;
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
 
 }

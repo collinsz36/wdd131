@@ -5,7 +5,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="Description" content="Product review form">
+<meta name="Description" content="Confirmation page showing your review was received, with total reviews and last modified date">
+<meta name="Author" content="Collins Zivanai">
 
 <title>Product Review</title>
 
@@ -42,15 +43,20 @@
 
 <legend>Overall Rating</legend>
 
-<label><input type="radio" name="productRating" value="1" required> ☆</label>
+<input type="radio" id="Rating1" name="productRating" value="1" required> 
+<label for="Rating1">☆</label>
 
-<label><input type="radio" name="productRating" value="2" required> ☆☆</label>
+<input type="radio" id="Rating2" name="productRating" value="2" required>
+<label for="Rating2"> ☆☆</label>
 
-<label><input type="radio" name="productRating" value="3" required> ☆☆☆</label>
+<input type="radio" id="Rating3" name="productRating" value="3" required>
+<label for="Rating3"> ☆☆☆</label>
 
-<label><input type="radio" name="productRating" value="4" required> ☆☆☆☆</label>
+<input type="radio" id="Rating4" name="productRating" value="4" required> 
+<label for="Rating4">☆☆☆☆</label>
 
-<label><input type="radio" name="productRating" value="5" required> ☆☆☆☆☆</label>
+<input type="radio" id="Rating5" name="productRating" value="5" required>
+<label for="Rating5"> ☆☆☆☆☆</label>
 
 </fieldset>
 
@@ -68,21 +74,17 @@
 
 <legend>Useful Features</legend>
 
-<label>
-<input type="checkbox" id="durability" name="productFeatures" value="Durability">Durability
-</label>
+<input type="checkbox" id="durability" name="productFeatures" value="Durability">
+<label for="durability">Durability</label>
 
-<label>
-<input type="checkbox" id="ease" name="productFeatures" value="Ease of Use">Ease of Use
-</label>
+<input type="checkbox" id="ease" name="productFeatures" value="Ease of Use">
+<label for="ease">Ease of Use</label>
 
-<label>
-<input type="checkbox" id="performance" name="productFeatures" value="Performance">Performance
-</label>
+<input type="checkbox" id="performance" name="productFeatures" value="Performance">
+<label for="performance">Performance</label>
 
-<label>
-<input type="checkbox" id="design" name="productFeatures" value="Design">Design
-</label>
+<input type="checkbox" id="design" name="productFeatures" value="Design">
+<label for="design">Design</label>
 
 </fieldset>
 
