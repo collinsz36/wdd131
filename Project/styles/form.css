@@ -36,8 +36,6 @@ margin-bottom:30px;
 }
 
 label{
-
-display:block;
 margin-bottom:6px;
 margin-top: 15px;
 font-weight:bold;
@@ -64,9 +62,36 @@ resize:vertical;
 
 input[type="radio"],
 input[type="checkbox"]{
-
 margin-right:10px;
 
+}
+
+.rating div {
+    margin-bottom: 8px;
+}
+
+.rating label {
+    display: inline;
+    margin: 0;
+    font-weight: bold;
+}
+
+.rating input[type="radio"] {
+    margin-right: 10px;
+}
+
+.features div {
+    margin-bottom: 8px;
+}
+
+.features label {
+    display: inline;
+    margin: 0;
+    font-weight: bold;
+}
+
+.features input[type="checkbox"] {
+    margin-right: 10px;
 }
 
 .optional{
