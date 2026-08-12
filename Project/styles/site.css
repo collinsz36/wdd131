@@ -1,0 +1,741 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f8f6f1;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Merriweather", Georgia, serif;
+    line-height: 1.2;
+    color: #173b35;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.site-header {
+    background-color: #173b35;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.logo span {
+    display: block;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navigation a {
+    padding: 0.5rem 0;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    border-bottom-color: #d9a441;
+    color: #f2c66d;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.page-hero {
+    min-height: 430px;
+
+    background:
+        linear-gradient(
+            rgba(23, 59, 53, 0.78),
+            rgba(23, 59, 53, 0.78)
+        ),
+        url("../images/hero.webp") center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.page-hero-content {
+    max-width: 750px;
+    padding: 3rem 1.5rem;
+}
+
+.page-hero h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.page-hero p {
+    font-size: 1.15rem;
+}
+
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+}
+
+.section-heading p {
+    max-width: 700px;
+}
+
+.section-label {
+    margin-bottom: 0.5rem;
+    color: #a66a21;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro > p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    display: inline-block;
+
+    background-color: #a66a21;
+    color: white;
+
+    padding: 0.8rem 1.4rem;
+
+    border: 2px solid #a66a21;
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #7e4e18;
+    border-color: #7e4e18;
+    transform: translateY(-2px);
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.destination-card-content {
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.destination-card-content p {
+    flex-grow: 1;
+}
+
+.destination-card .button {
+    align-self: flex-start;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.75rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.filter-button {
+    background-color: white;
+    color: #173b35;
+
+    border: 2px solid #173b35;
+    border-radius: 5px;
+
+    padding: 0.6rem 1.2rem;
+
+    font-weight: 700;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    background-color: #173b35;
+    color: white;
+}
+
+.fleet-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.fleet-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.fleet-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fleet-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.fleet-card-content {
+    padding: 1.5rem;
+}
+
+.fleet-card-content p {
+    margin-bottom: 1.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: white;
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #173b35;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.travel-planning {
+    background-color: #e8eee9;
+    max-width: none;
+
+    padding-left: max(1.5rem, calc((100% - 1100px) / 2));
+    padding-right: max(1.5rem, calc((100% - 1100px) / 2));
+}
+
+.planning-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.planning-options {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+.planning-options article {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.booking-section {
+    background-color: #e8eee9;
+    max-width: none;
+}
+
+.booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-form {
+    background-color: white;
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #c5cbc7;
+    border-radius: 6px;
+
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+
+    color: #173b35;
+
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.3rem;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    border: 1px solid #8d9892;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(166, 106, 33, 0.25);
+    border-color: #a66a21;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    font-weight: 500;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+.optional {
+    color: #666;
+    font-weight: 400;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.form-message {
+    margin-top: 1.5rem;
+
+    padding: 1rem;
+
+    background-color: #e8eee9;
+
+    border-radius: 5px;
+
+    white-space: pre-line;
+}
+
+.cta {
+    background-color: #173b35;
+    color: white;
+
+    text-align: center;
+
+    padding: 5rem 1.5rem;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.cta p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta .section-label {
+    color: #f2c66d;
+}
+
+.site-footer {
+    background-color: #102b27;
+    color: white;
+
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:
+        2fr 1fr;
+
+    gap: 3rem;
+}
+
+.footer-brand h2 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+    max-width: 450px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links h3 {
+    color: #f2c66d;
+}
+
+.footer-links a:hover {
+    color: #f2c66d;
+}
+#lastmodified {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.copyright {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+
+    .destination-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .service-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .planning-options {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+
+        padding-top: 1rem;
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation a {
+        padding: 0.8rem 0;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .page-hero {
+        min-height: 350px;
+    }
+
+    .section {
+        padding: 3.5rem 1.2rem;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fleet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .planning-options {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        padding: 1.2rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .page-hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+    }
+
+    .filter-button {
+        width: 100%;
+    }
+
+}

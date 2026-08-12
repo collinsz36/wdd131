@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Request a charter flight with Mosi-oa-Tunya Charter Services. Submit your travel details, destination, date, and passenger information online.">
+
+    <meta name="author" content="Collins Zivanai">
+
+    <title>Mosi-oa-Tunya Charter Services | Booking</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+
+    <script src="scripts/site.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                Mosi-oa-Tunya
+                <span>Charter Services</span>
+            </a>
+
+            <button class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="fleet.html">
+                    Fleet
+                </a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="booking.html" class="active">
+                    Booking
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE HERO -->
+
+        <section class="page-hero">
+
+            <div class="page-hero-content">
+
+                <p class="section-label">
+                    PLAN YOUR JOURNEY
+                </p>
+
+                <h1>Request a Charter</h1>
+
+                <p>
+                    Tell us about your journey and submit a
+                    charter flight request.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING INTRODUCTION -->
+
+        <section class="intro section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    START YOUR JOURNEY
+                </p>
+
+                <h2>Tell Us About Your Travel Plans</h2>
+
+            </div>
+
+            <p>
+                Complete the form below with your travel
+                requirements. Providing accurate information
+                will help us understand your journey and
+                respond to your enquiry.
+            </p>
+
+        </section>
+
+
+        <!-- BOOKING FORM -->
+
+        <section class="booking-section section">
+
+            <div class="booking-container">
+
+                <form id="bookingForm"
+                    class="booking-form"
+                    method="get"
+                    action="">
+
+                    <fieldset>
+
+                        <legend>Passenger Information</legend>
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                autocomplete="tel"
+                                required>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Travel Details</legend>
+
+                        <div class="form-group">
+
+                            <label for="departure">
+                                Departure Location
+                            </label>
+
+                            <input
+                                type="text"
+                                id="departure"
+                                name="departure"
+                                placeholder="For example, Harare"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="destination">
+                                Destination
+                            </label>
+
+                            <select
+                                id="destination"
+                                name="destination"
+                                required>
+
+                                <option value="" selected disabled>
+                                    Select a destination
+                                </option>
+
+                                <option value="Victoria Falls">
+                                    Victoria Falls
+                                </option>
+
+                                <option value="Lake Kariba">
+                                    Lake Kariba
+                                </option>
+
+                                <option value="Chiredzi">
+                                    Chiredzi
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="travelDate">
+                                Travel Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="travelDate"
+                                name="travelDate"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="passengers">
+                                Number of Passengers
+                            </label>
+
+                            <input
+                                type="number"
+                                id="passengers"
+                                name="passengers"
+                                min="1"
+                                required>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Travel Type</legend>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="travelType"
+                                    value="Tourism"
+                                    required>
+                                Tourism
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="travelType"
+                                    value="Business">
+                                Business
+                            </label>
+
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="travelType"
+                                    value="Family">
+                                Family Travel
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Additional Information</legend>
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Additional Requests
+                                <span class="optional">
+                                    (optional)
+                                </span>
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell us anything else about your journey."></textarea>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <div class="form-submit">
+
+                        <button
+                            type="submit"
+                            class="button">
+                            Submit Charter Request
+                        </button>
+
+                    </div>
+
+                    <p id="formMessage"
+                        class="form-message"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING INFORMATION -->
+
+        <section class="booking-info section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    WHAT HAPPENS NEXT?
+                </p>
+
+                <h2>After You Submit Your Request</h2>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        1
+                    </div>
+
+                    <h3>Submit Your Details</h3>
+
+                    <p>
+                        Provide your travel information using
+                        the charter request form.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        2
+                    </div>
+
+                    <h3>Review Your Request</h3>
+
+                    <p>
+                        Your submitted information helps us
+                        understand your travel requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        3
+                    </div>
+
+                    <h3>Plan Your Journey</h3>
+
+                    <p>
+                        Your enquiry can be used to begin
+                        planning your charter journey.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <div class="cta-content">
+
+                <p class="section-label">
+                    NEED MORE INFORMATION?
+                </p>
+
+                <h2>Explore Our Destinations</h2>
+
+                <p>
+                    See the destinations available for your
+                    next Zimbabwe journey.
+                </p>
+
+                <a href="destinations.html"
+                    class="button">
+                    Explore Destinations
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h2>Mosi-oa-Tunya</h2>
+
+                <p>
+                    Charter services connecting travellers
+                    with Zimbabwe's remarkable destinations.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="fleet.html">Fleet</a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="references.html">
+                    References
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+            &copy; 2026 Mosi-oa-Tunya Charter Services.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
