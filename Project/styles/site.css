@@ -532,7 +532,6 @@ textarea {
 #lastmodified {
     display: flex;
     justify-content: space-between;
-    text-align: center;
 }
 
 .copyright {
