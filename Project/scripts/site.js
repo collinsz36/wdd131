@@ -203,7 +203,6 @@ if (document.querySelector("#fleetContainer")) {
     displayFleet();
 
 }
-
 const bookingForm =
     document.querySelector("#bookingForm");
 
@@ -302,7 +301,6 @@ function showMessage(message) {
         messageBox.textContent = message;
 
     }
-
 }
 document.querySelector("#lastModified").textContent =
        `Last Modification: ${document.lastModified}`;
