@@ -18,28 +18,28 @@ const destinations = [
         name: "Victoria Falls",
         category: "tourism",
         description: "Experience one of Zimbabwe's most spectacular natural attractions.",
-        image: "images/victoria-falls.webp"
+        image: "Images/victoria-falls.webp"
     },
 
     {
         name: "Lake Kariba",
         category: "tourism",
         description:"Enjoy beautiful sunsets and memorable experiences around Lake Kariba.",
-        image: "images/lake-kariba.webp"
+        image: "Images/lake-kariba.webp"
     },
 
     {
         name: "Hwange National Park",
         category: "wildlife",
         description:"Discover one of Zimbabwe's outstanding wildlife destinations.",
-        image: "images/hwange.webp"
+        image: "Images/hwange.webp"
     },
 
     {
         name: "Chiredzi",
         category: "business",
         description:"A destination suitable for travellers with business and other travel needs.",
-        image: "images/chiredzi.webp"
+        image: "Images/chiredzi.webp"
     }
 
 ];
@@ -142,13 +142,13 @@ const aircraft = [
     {
         name: "Cessna Aircraft",
         description: "A charter aircraft option designed for convenient travel between selected destinations.",
-        image: "images/cessna.webp"
+        image: "Images/cessna.webp"
     },
 
     {
         name: "Cessna Caravan",
         description: "An aircraft option suited to charter travel and tourism journeys.",
-        image: "images/cessna-caravan.webp"
+        image: "Images/cessna-caravan.webp"
     }
 
 ];
